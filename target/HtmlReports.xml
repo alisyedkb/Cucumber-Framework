@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="4.693" tests="4" skipped="0" failures="0" errors="0">
-<testcase classname="Validate Login" name="Title of your scenario" time="1.507">
+<testsuite name="Cucumber" time="6.306" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="Validate Login" name="Title of your scenario" time="1.922">
 <system-out><![CDATA[
 Given user launches chrome browser..........................................passed
 When user opens url "https:www.facebook.com/"...............................passed
@@ -10,7 +10,7 @@ Then page title should be "Facebook - log in or sign up"....................pass
 And close browser...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validate Login" name=" - Example #1.1" time="1.058">
+<testcase classname="Validate Login" name=" - Example #1.1" time="1.217">
 <system-out><![CDATA[
 Given user launches chrome browser..........................................passed
 When user opens url "https:www.facebook.com/"...............................passed
@@ -20,11 +20,11 @@ Then page title should be "Facebook - log in or sign up"....................pass
 And close browser...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validate Login" name=" - Example #1.2" time="1.041">
+<testcase classname="Validate Login" name=" - Example #1.2" time="1.029">
 <system-out><![CDATA[
 Given user launches chrome browser..........................................passed
 When user opens url "https:www.facebook.com/"...............................passed
-And user enters email as "test@icloud.com" and password as "P@ssword1"......passed
+And user enters email as "test@icloud.com" and password as "P@ssword2"......passed
 And user clicks login.......................................................passed
 Then page title should be "Facebook - log in or sign up"....................passed
 And close browser...........................................................passed
@@ -34,7 +34,17 @@ And close browser...........................................................pass
 <system-out><![CDATA[
 Given user launches chrome browser..........................................passed
 When user opens url "https:www.facebook.com/"...............................passed
-And user enters email as "testcase2@yahoo" and password as "P@ssword1"......passed
+And user enters email as "testcase2@yahoo" and password as "P@ssword3"......passed
+And user clicks login.......................................................passed
+Then page title should be "Facebook - log in or sign up"....................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Login" name=" - Example #1.4" time="1.043">
+<system-out><![CDATA[
+Given user launches chrome browser..........................................passed
+When user opens url "https:www.facebook.com/"...............................passed
+And user enters email as "invalid4@gmail.com" and password as "P@ssword4"...passed
 And user clicks login.......................................................passed
 Then page title should be "Facebook - log in or sign up"....................passed
 And close browser...........................................................passed

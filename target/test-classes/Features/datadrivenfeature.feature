@@ -15,12 +15,13 @@ Feature: Validate Login
     When user opens url "https:www.facebook.com/"
     And user enters email as "<email>" and password as "<password>"
     And user clicks login
-    Then page title should be "Facebook - log in or sign up"
-#    And Newsfeed
+    Then title should be "Facebook - log in or sign up"
+#   And user will see Newsfeed
     And close browser
 
    Examples:
     |email|password|
     |prince.ali23k@gmail.com|P@ssword1|
-    |test@icloud.com|P@ssword1|
-    |testcase2@yahoo|P@ssword1|
+    |test@icloud.com|P@ssword2|
+    |testcase2@yahoo|P@ssword3|
+    |invalid4@gmail.com|P@ssword4|
