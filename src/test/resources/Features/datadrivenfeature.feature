@@ -1,6 +1,7 @@
-Feature: Title of your feature
+@RegressionTest
+Feature: Validate Login
   I want to validate login
-
+@RegressionTest
   Scenario: Title of your scenario
     Given user launches chrome browser
     When user opens url "https:www.facebook.com/"
@@ -8,13 +9,14 @@ Feature: Title of your feature
     And user clicks login
     Then page title should be "Facebook - log in or sign up"
     And close browser
-    
+@RegressionTest    
    Scenario Outline:
     Given user launches chrome browser
     When user opens url "https:www.facebook.com/"
     And user enters email as "<email>" and password as "<password>"
     And user clicks login
     Then page title should be "Facebook - log in or sign up"
+#    And Newsfeed
     And close browser
 
    Examples:
